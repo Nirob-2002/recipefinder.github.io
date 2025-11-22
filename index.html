@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="info-section">
+            <h3 class="project-summary">
+                <b>Project Summary:</b> This is a Recipe Finder project, where we can search for world-famous food recipes by their name.
+            </h3>
+            <h4 class="contributors">
+                <b>Project Contributors (Group: D):</b> <i>Team Leader: Limon,</i> Team Members: Ashik, Hasibul, Rokon Ali
+            </h4>
+        </div>
+
+        <h1>🍽️ Food Recipe Finder</h1>
+        
+        <div class="top-bar">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search by name, e.g. Chicken, Pasta...">
+                <button onclick="searchRecipe()">🔎 Search</button> 
+            </div>
+            <button id="darkBtn" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+        </div>
+
+        <div class="recipe-section">
+            <div class="favorites-container">
+                <h2>❤️ Favorites</h2>
+                <div id="favorites" class="result">
+                    <p class="no-fav-msg">Your favorite recipes will appear here.</p>
+                </div>
+            </div>
+
+            <div class="search-results-container">
+                <h2>Search Results</h2>
+                <div id="result" class="result"></div>
+                <div id="pagination" class="pagination"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="popup" class="popup">
+      <div class="popup-content">
+          <span class="close" onclick="closePopup()">&times;</span>
+          <div id="popup-body">
+              </div>
+      </div>
+    </div>
+
+</body>
+</html>
