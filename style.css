@@ -170,7 +170,7 @@ h1 { text-align: center; color: #ff6f61; margin-bottom: 30px; }
     overflow: auto;
 }
 
-/* ✅ MODIFY: overflow hidden + box sizing */
+/*MODIFY: overflow hidden + box sizing */
 .popup-content {
     background: white;
     padding: 30px;
@@ -180,8 +180,8 @@ h1 { text-align: center; color: #ff6f61; margin-bottom: 30px; }
     border-radius: 12px;
     position: relative;
 
-    overflow: hidden;       /* ✅ NEW */
-    box-sizing: border-box; /* ✅ NEW */
+    overflow: hidden;       
+    box-sizing: border-box;
 }
 
 .dark .popup-content { background: #333; }
@@ -204,7 +204,7 @@ h1 { text-align: center; color: #ff6f61; margin-bottom: 30px; }
     padding-bottom: 10px; 
 }
 
-/* ✅ MODIFY: Popup image fix */
+
 .popup-body img { 
     max-width: 100%; 
     height: auto; 
@@ -212,8 +212,8 @@ h1 { text-align: center; color: #ff6f61; margin-bottom: 30px; }
     margin: 15px auto; 
     display: block;
 
-    object-fit: contain;    /* ✅ NEW */
-    max-height: 300px;      /* ✅ NEW */
+    object-fit: contain;    
+    max-height: 300px;      
 }
 
 .ingredients-list {
@@ -260,7 +260,7 @@ h1 { text-align: center; color: #ff6f61; margin-bottom: 30px; }
 
     .ingredients-list { columns: 1; }
 
-    /* ✅ Mobile popup fix */
+
     .popup-content {
         width: 95%;
         padding: 15px;
